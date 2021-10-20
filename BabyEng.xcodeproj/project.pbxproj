@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F54518952720761800909A28 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54518942720761800909A28 /* MainTableViewController.swift */; };
+		F5451899272083EE00909A28 /* GlossariesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5451898272083EE00909A28 /* GlossariesList.swift */; };
+		F545189E2720869300909A28 /* GlossaryProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F545189D2720869300909A28 /* GlossaryProvider.swift */; };
 		F5821E5E27175BF20039FE92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5821E5D27175BF20039FE92 /* AppDelegate.swift */; };
 		F5821E6027175BF20039FE92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5821E5F27175BF20039FE92 /* SceneDelegate.swift */; };
 		F5821E6227175BF20039FE92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5821E6127175BF20039FE92 /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F54518942720761800909A28 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		F5451898272083EE00909A28 /* GlossariesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlossariesList.swift; sourceTree = "<group>"; };
+		F545189D2720869300909A28 /* GlossaryProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlossaryProvider.swift; sourceTree = "<group>"; };
 		F5821E5A27175BF20039FE92 /* BabyEng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabyEng.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5821E5D27175BF20039FE92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5821E5F27175BF20039FE92 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +43,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F545188F272074FD00909A28 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F5451898272083EE00909A28 /* GlossariesList.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F54518902720750D00909A28 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F54518912720752500909A28 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F54518942720761800909A28 /* MainTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F54518922720756C00909A28 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				F5821E6627175BF50039FE92 /* Assets.xcassets */,
+				F5821E6827175BF50039FE92 /* LaunchScreen.storyboard */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		F54518932720757800909A28 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5821E5D27175BF20039FE92 /* AppDelegate.swift */,
+				F5821E5F27175BF20039FE92 /* SceneDelegate.swift */,
+				F5821E6327175BF20039FE92 /* Main.storyboard */,
+				F5821E6127175BF20039FE92 /* ViewController.swift */,
+				F5821E6B27175BF50039FE92 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F545189A2720851000909A28 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F545189D2720869300909A28 /* GlossaryProvider.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		F5821E5127175BF10039FE92 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +114,12 @@
 		F5821E5C27175BF20039FE92 /* BabyEng */ = {
 			isa = PBXGroup;
 			children = (
-				F5821E5D27175BF20039FE92 /* AppDelegate.swift */,
-				F5821E5F27175BF20039FE92 /* SceneDelegate.swift */,
-				F5821E6127175BF20039FE92 /* ViewController.swift */,
-				F5821E6327175BF20039FE92 /* Main.storyboard */,
-				F5821E6627175BF50039FE92 /* Assets.xcassets */,
-				F5821E6827175BF50039FE92 /* LaunchScreen.storyboard */,
-				F5821E6B27175BF50039FE92 /* Info.plist */,
+				F545188F272074FD00909A28 /* Models */,
+				F54518902720750D00909A28 /* Views */,
+				F54518912720752500909A28 /* Controllers */,
+				F545189A2720851000909A28 /* Services */,
+				F54518922720756C00909A28 /* Resourses */,
+				F54518932720757800909A28 /* Supporting Files */,
 			);
 			path = BabyEng;
 			sourceTree = "<group>";
@@ -137,8 +194,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F54518952720761800909A28 /* MainTableViewController.swift in Sources */,
 				F5821E6227175BF20039FE92 /* ViewController.swift in Sources */,
 				F5821E5E27175BF20039FE92 /* AppDelegate.swift in Sources */,
+				F5451899272083EE00909A28 /* GlossariesList.swift in Sources */,
+				F545189E2720869300909A28 /* GlossaryProvider.swift in Sources */,
 				F5821E6027175BF20039FE92 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,7 +347,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = BabyEng/Info.plist;
+				INFOPLIST_FILE = "BabyEng/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,7 +365,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = BabyEng/Info.plist;
+				INFOPLIST_FILE = "BabyEng/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
